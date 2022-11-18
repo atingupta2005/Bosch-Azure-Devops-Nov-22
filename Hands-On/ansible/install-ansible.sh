@@ -6,7 +6,7 @@ rm -rf ~/.azure
 sudo apt remove -y ansible
 
 # Remove Python venv
-rm -rf python_venv
+rm -rf ~/python_venv
 
 # Install Python Virtual env (If required)
 sudo apt update
