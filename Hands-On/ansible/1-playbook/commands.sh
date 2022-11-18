@@ -16,4 +16,5 @@ ansible all -i hosts -a "df -h"
 ansible-playbook -i hosts playbook.yml -kK
 
 ## Confirm content of the file in all hosts
+ansible all -i hosts -a "rouch /tmp/myfile-u36.txt"
 ansible all -i hosts -a "cat /tmp/testfile.txt"
