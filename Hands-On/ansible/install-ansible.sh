@@ -6,10 +6,12 @@ rm -rf ~/.azure
 sudo apt remove -y ansible
 
 # Install Python Virtual env (If required)
-sudo apt install -y python3-virtualenv
+sudo apt update
+sudo apt-get install -y python3-venv
 
 # Create Virtual Env (If required)
-virtualenv ~/python_venv
+rm -rf ~/python_venv
+python3 -m venv ~/python_venv
 source ~/python_venv/bin/activate
 python --version
 
