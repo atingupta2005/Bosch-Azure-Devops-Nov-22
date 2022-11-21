@@ -1,3 +1,5 @@
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/08-debugging
+
 # Debugging in Kubernetes
 ## Obtaining Information About Your Clusters
 ```
