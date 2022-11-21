@@ -5,7 +5,7 @@
 
 variable "image_sku" {
   type =  string
-  default = "19_04-gen2"
+  default = "18_04-lts-gen2"
 }
 
 variable "client_secret" {
