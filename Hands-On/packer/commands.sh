@@ -42,5 +42,9 @@ cat ubuntu-test.pkr.hcl | grep packer
 
 packer init .
 packer build .
-az vm create -resource-group rgpacker$USER -name VM$USER -image $USERPackerImage -admin-username azureuser -generate-ssh-keys
+
+# Replace Image reference in below variable
+imageRef="/subscriptions/ecac8ae5-fedf-4b56-a8f0-a7f03b74467f/resourceGroups/packerdemou36/providers/Microsoft.Compute/images/myPackerImage"
+
+az vm create --resource-group rgpacker$USER --name VM$USER --image $imageRef --admin-username azureuser --generate-ssh-keys
 az vm open-port -resource-group rgpacker$USER -name VM$USER -port 80
