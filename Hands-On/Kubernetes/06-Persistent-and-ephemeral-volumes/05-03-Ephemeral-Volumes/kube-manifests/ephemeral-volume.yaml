@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - image: alpine:latest
-    imagePullPolicy: Never
+    imagePullPolicy: Always
     name: myvolumes-container
 
     command: ['sh', '-c', 'echo Container is Running ; sleep 3600']
