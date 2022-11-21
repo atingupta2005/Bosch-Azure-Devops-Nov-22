@@ -6,7 +6,7 @@ source "azure-arm" "my-example" {
   tenant_id= "${var.tenant_id}"
   subscription_id = "${var.subscription_id}"
 
-  managed_image_resource_group_name = "packerdemo"
+  managed_image_resource_group_name = "packerdemo$USER"
   managed_image_name = "myPackerImage"
 
   os_type = "Linux"
