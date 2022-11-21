@@ -1,3 +1,5 @@
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/11-volumes-configmaps-and-secrets
+
 # Kubernetes - Secrets
 
 # Linux
