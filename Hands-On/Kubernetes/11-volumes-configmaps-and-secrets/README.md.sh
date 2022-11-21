@@ -11,7 +11,7 @@ kubectl apply -f kube-manifests/
 # List Pods
 kubectl get pods
 
-
+sleep 10
 # Get Public IP of Application
 kubectl get svc usermgmt-webapp-service
 
