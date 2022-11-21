@@ -1,3 +1,5 @@
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/03-resource-and-objects/04-03-Deployments-with-YAML/
+
 # Deployments with YAML
 # Create Deployment
 
