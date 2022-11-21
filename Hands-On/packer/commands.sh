@@ -29,7 +29,6 @@ sed -i "s/d2390854-6661-451d-bee2-3bd9b42b14cc/$client_id/g" ubuntu-test-var.pkr
 sed -i "s/0040020a-b598-444c-8f0b-92f82e1224c0/$tenant_id/g" ubuntu-test-var.pkr.hcl
 sed -i "s/944c019d-3e46-422b-b63a-86513f147562/$subscription_id/g" ubuntu-test-var.pkr.hcl
 sed -i "s/944c019d-3e46-422b-b63a-86513f147562/$image_sku/g" ubuntu-test-var.pkr.hcl
-sed -i "s/-packerdemo-/packerdemo$USER/g" ubuntu-test.pkr.hcl
 
 cat ubuntu-test-var.pkr.hcl
 echo $client_id
@@ -37,6 +36,10 @@ echo $client_secret
 echo $tenant_id
 echo $image_sku
 echo $subscription_id
+
+sed -i "s/-packerdemo-/packerdemo$USER/g" ubuntu-test.pkr.hcl
+cat ubuntu-test.pkr.hcl | grep packer
+
 packer init .
 packer build .
 az vm create -resource-group rgpacker$USER -name myVM -image myPackerImage -admin-username azureuser -generate-ssh-keys
