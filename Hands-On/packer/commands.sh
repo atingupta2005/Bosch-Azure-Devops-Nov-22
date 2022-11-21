@@ -44,7 +44,8 @@ packer init .
 packer build .
 
 # Replace Image reference in below variable
-imageRef="/subscriptions/ecac8ae5-fedf-4b56-a8f0-a7f03b74467f/resourceGroups/packerdemou36/providers/Microsoft.Compute/images/myPackerImage"
+imageRef=$(az image show -g packerdemo$USER -n myPackerImage --query [id] -o tsv)
+echo $imageRef
 
 az vm create --resource-group rgpacker$USER --name VM$USER --image $imageRef --admin-username azureuser --generate-ssh-keys
-az vm open-port -resource-group rgpacker$USER -name VM$USER -port 80
+az vm open-port --resource-group rgpacker$USER --name VM$USER --port 80
