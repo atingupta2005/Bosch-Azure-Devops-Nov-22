@@ -1,3 +1,5 @@
+cd ~/Hands-On/Kubernetes/03-resource-and-objects/04-04-Services-with-YAML/
+
 # Services with YAML
 
 ## Introduction to Services
