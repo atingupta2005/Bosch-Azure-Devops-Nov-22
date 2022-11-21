@@ -3,6 +3,7 @@
 # Create Deployment & LoadBalancer Service
 kubectl apply -f kube-manifests/
 
+sleep 10
 
 # List Pods
 kubectl get pods
