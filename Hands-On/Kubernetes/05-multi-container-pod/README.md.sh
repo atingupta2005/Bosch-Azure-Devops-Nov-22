@@ -1,3 +1,5 @@
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/05-multi-container-pod/
+
 kubectl apply -f kube-manifests/multi-pod.yaml
 
 kubectl get pods
