@@ -42,5 +42,5 @@ cat ubuntu-test.pkr.hcl | grep packer
 
 packer init .
 packer build .
-az vm create -resource-group rgpacker$USER -name myVM -image myPackerImage -admin-username azureuser -generate-ssh-keys
-az vm open-port -resource-group rgpacker$USER -name myVM -port 80
+az vm create -resource-group rgpacker$USER -name VM$USER -image $USERPackerImage -admin-username azureuser -generate-ssh-keys
+az vm open-port -resource-group rgpacker$USER -name VM$USER -port 80
