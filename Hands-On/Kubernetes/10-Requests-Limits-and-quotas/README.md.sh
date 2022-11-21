@@ -1,3 +1,5 @@
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/10-Requests-Limits-and-quotas/
+
 # Kubernetes - Requests and Limits
 
 # Create All Objects
