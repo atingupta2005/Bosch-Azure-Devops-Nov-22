@@ -5,7 +5,11 @@
 
 ## Installing Packer
 ```
-sudo apt install -y packer
+sudo apt update
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt update
+sudo apt install -y packer jq
 ```
 
 ## Packer Template
@@ -30,6 +34,7 @@ sudo apt install -y packer
 ## Running Packer
   - Packer builds the images using the build sub-command followed by a HCL template.
 ```
+packer init .
 packer build .
 ```
 
@@ -81,6 +86,7 @@ az vm image list-skus --location "East US" --offer UbuntuServer --publisher Cano
 
 ## Build Packer image
 ```
+packer init .
 packer build .
 ```
 
