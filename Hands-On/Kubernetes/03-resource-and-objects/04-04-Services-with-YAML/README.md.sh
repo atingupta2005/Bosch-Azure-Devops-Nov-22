@@ -1,4 +1,4 @@
-cd ~/Hands-On/Kubernetes/03-resource-and-objects/04-04-Services-with-YAML/
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/03-resource-and-objects/04-04-Services-with-YAML/
 
 # Services with YAML
 
