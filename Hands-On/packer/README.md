@@ -54,7 +54,8 @@ packer build .
  - The output from the Packer build process is stored in this resource group.
 ```
 az account list
-az group create -n myResourceGroup -l eastus
+az group create -n rgpacker$USER -l eastus
+az group create -n packerdemo$USER -l eastus
 ```
 
 ## Create Azure credentials
@@ -63,7 +64,7 @@ az group create -n myResourceGroup -l eastus
 - You control and define the permissions as to what operations the service principal can perform in Azure.
 - To authenticate to Azure, you also need to obtain your Azure subscription ID
 ```
-az account show — query "{ subscription_id: id }"
+az account show
 ```
 
 - Create Service Principal
@@ -95,9 +96,9 @@ packer build .
 - We need to specify the image you created with the --image parameter
 ```
 az vm create \
-— resource-group myResourceGroup \
-— name myVM \
-— image myPackerImage \
+— resource-group rgpacker$USER \
+— name VM$USER \
+— image PackerImage$USER \
 — admin-username azureuser \
 — generate-ssh-keys
 ```
@@ -105,8 +106,8 @@ az vm create \
 - To allow web traffic to reach your VM, open port 80 from the Internet.
 ```
 az vm open-port \
-— resource-group myResourceGroup \
-— name myVM \
+— resource-group rgpacker$USER \
+— name VM$USER \
 — port 80
 ```
 
