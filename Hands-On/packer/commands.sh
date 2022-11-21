@@ -2,9 +2,11 @@ source ~/python_venv/bin/activate
 
 cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/packer
 
-sudo apt-get update
-sudo apt install -y packer
-sudo apt install -y jq
+sudo apt update
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt update
+sudo apt install -y packer jq
 
 #az login --use-device-code
 #az account set --subscription="SUBSCRIPTION_ID"
@@ -34,7 +36,7 @@ echo $client_secret
 echo $tenant_id
 echo $image_sku
 echo $subscription_id
-
+packer init .
 packer build .
 az vm create -resource-group rgpacker$USER -name myVM -image myPackerImage -admin-username azureuser -generate-ssh-keys
 az vm open-port -resource-group rgpacker$USER -name myVM -port 80
