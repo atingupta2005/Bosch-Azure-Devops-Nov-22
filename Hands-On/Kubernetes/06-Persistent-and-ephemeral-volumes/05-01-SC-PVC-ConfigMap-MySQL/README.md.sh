@@ -9,10 +9,10 @@ kubectl apply -f kube-manifests/02-persistent-volume-claim.yml
 # List Storage Classes
 kubectl get sc
 
-# List PVC
+# List PVC # It will show Pending
 kubectl get pvc
 
-# List PV
+# List PV # It will show No Resource
 kubectl get pv
 
 ### Create ConfigMap manifest
