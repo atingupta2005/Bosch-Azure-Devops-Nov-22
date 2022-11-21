@@ -14,6 +14,8 @@ echo $POD_NAME2
 #Check limits
 kubectl describe pod $POD_NAME2
 
+sleep 10
+
 kubectl get svc app1-nginx-clusterip-service
 
 # List Services
