@@ -1,6 +1,6 @@
 source ~/python_venv/bin/activate
 cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/ansible
-cd 02-Jinja2-for-loop
+cd 2-jinja-template/02-Jinja2-for-loop
 
 
 ## Running Playbook
