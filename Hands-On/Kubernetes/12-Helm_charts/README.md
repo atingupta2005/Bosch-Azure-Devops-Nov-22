@@ -8,6 +8,7 @@
 - Charts are the convenient way to tell the Kubernetes api-server which resources a given application needs to properly run in Kubernetes.
 
 ## Chart Structure
+```
 ├── Chart.yaml (meta info about chart)
 ├── templates (the actual template files)
 │   ├── service.yaml
@@ -16,3 +17,4 @@
 │   ├── nginx-ingress-1.1.2.tgz
 ├── requirements.yaml
 └── values (values for template files)
+```
