@@ -1,3 +1,5 @@
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/04-Jobs-and-cronjobs/
+
 # Kubernetes Job
 ## How to Create a Kubernetes Job
 kubectl apply -f kube-manifests/job.yaml
