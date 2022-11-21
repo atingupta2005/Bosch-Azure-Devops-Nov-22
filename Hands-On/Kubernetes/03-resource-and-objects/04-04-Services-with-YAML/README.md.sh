@@ -24,14 +24,6 @@ echo $SVC_PUB_IP2
 # Access REST Application
 curl $SVC_PUB_IP2/hello
 
-### Delete Objects (file by file)
-kubectl delete -f kube-manifests/01-backend-deployment.yml -f kube-manifests/02-backend-clusterip-service.yml -f kube-manifests/03-frontend-deployment.yml -f kube-manifests/04-frontend-LoadBalancer-service.yml
-kubectl get all
-
-### Recreate Objects using YAML files in a folder
-kubectl apply -f kube-manifests/  --validate=false
-kubectl get all
-
 ### Delete Objects using YAML files in folder
 kubectl delete -f kube-manifests/
 kubectl get all
