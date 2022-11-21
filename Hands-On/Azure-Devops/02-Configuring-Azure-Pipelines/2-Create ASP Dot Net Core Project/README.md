@@ -7,11 +7,6 @@
 ## Tasks References:
  - https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/?view=azure-devops
 
-## Build and test ASP.NET Core projects targeting the full .NET Framework
-  - Add steps that publish symbols, save build artifacts, and more:
- - Refer
-   - https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 ### Pipeline Code
  ```
  trigger:
