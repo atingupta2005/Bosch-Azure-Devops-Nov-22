@@ -1,5 +1,5 @@
 [demoservers]
-vm1 ansible_host=127.0.0.1
+vm1 ansible_host=20.100.168.239
 
 [all:vars]
 ansible_python_interpreter=python3
