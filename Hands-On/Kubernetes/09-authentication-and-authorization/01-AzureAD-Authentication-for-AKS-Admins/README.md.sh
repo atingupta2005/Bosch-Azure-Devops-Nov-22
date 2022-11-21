@@ -1,6 +1,6 @@
 # Azure AD Authentication for AKS Cluster Admins
 
-# Verify Nodes
+# Verify Nodes 
 kubectl get nodes -o wide
 
 
