@@ -37,7 +37,7 @@ echo $tenant_id
 echo $image_sku
 echo $subscription_id
 
-sed -i "s/-packerdemo-/packerdemo$USER/g" ubuntu-test.pkr.hcl
+sed -i "s/packerdemo/packerdemo$USER/g" ubuntu-test.pkr.hcl
 cat ubuntu-test.pkr.hcl | grep packer
 
 packer init .
