@@ -1,3 +1,5 @@
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/09-authentication-and-authorization/01-AzureAD-Authentication-for-AKS-Admins/
+
 # Azure AD Authentication for AKS Cluster Admins
 
 # Verify Nodes 
