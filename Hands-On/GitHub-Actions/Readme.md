@@ -11,7 +11,7 @@
 ## Create Our First Workflow
 https://github.com/atingupta2005/Bosch-github-actions-training/tree/lets-create-our-first-workflow
 
-- To enable debugging set secret to true
+- To enable debugging set secret to true in Settings -> Secrets of GitHub Repo
   - ACTIONS_RUNNER_DEBUG
   - ACTIONS_STEP_DEBUG
 
@@ -30,7 +30,7 @@ https://github.com/atingupta2005/Bosch-github-actions-training/tree/setting-a-sc
   - https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
 - The shortest interval you can run scheduled workflows is once every 5 minutes.
 - There is no guarantee that the workflow will run every x minutes.
-- The scheduled workflow may be not triggered at that minute
+- The scheduled workflow may be not triggered at that minute 
 
 ## Default & Custom Environment Variables
 https://github.com/atingupta2005/Bosch-github-actions-training/tree/default-and-custom-environment-variables
