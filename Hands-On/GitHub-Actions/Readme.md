@@ -61,7 +61,6 @@ https://github.com/atingupta2005/Bosch-github-actions-training/tree/expressions-
 https://github.com/atingupta2005/Bosch-github-actions-training/tree/the-if-key-and-job-status-check-functions
 
 ## Deploying the Application to Azure
-- Refer: https://docs.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel
 
 ## Self Hosted Runners
 - Refer: https://github.com/atingupta2005/Bosch-github-actions-training/settings/actions/runners
