@@ -55,7 +55,6 @@ https://github.com/atingupta2005/Bosch-github-actions-training/tree/using-the-gi
 
 ## Expressions & Contexts
 https://github.com/atingupta2005/Bosch-github-actions-training/tree/expressions-and-contexts
-- Refer: https://docs.github.com/en/actions/learn-github-actions/contexts
 
 ## The If key & Job Status Check Functions
 https://github.com/atingupta2005/Bosch-github-actions-training/tree/the-if-key-and-job-status-check-functions
