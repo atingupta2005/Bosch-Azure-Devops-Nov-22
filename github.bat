@@ -1,7 +1,7 @@
 git checkout main
-git pull github main
+git pull origin main
 del .gitignore
 copy .gitignore-github .gitignore
 git add *
 git commit -am "-"
-git push github main
+git push origin main
