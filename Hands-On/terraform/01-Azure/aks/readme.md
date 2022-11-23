@@ -25,6 +25,8 @@ ls ~/.ssh
 ssh-keygen
 ```
 
+
+## Run terraform scripts
 ```
 terraform init
 ```
