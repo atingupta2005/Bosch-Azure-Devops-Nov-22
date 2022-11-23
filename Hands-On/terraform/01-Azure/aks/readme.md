@@ -11,6 +11,11 @@ az account show
 az ad sp create-for-rbac --name spaks  --role Contributor --scopes /subscriptions/<sp-id>
 ```
 
+## Update the terraform.tfvars file
+```
+nano terraform.tfvars
+```
+
 ```
 ls ~/.ssh
 ```
