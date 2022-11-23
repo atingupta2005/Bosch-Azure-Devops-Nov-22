@@ -1,5 +1,8 @@
 cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/Kubernetes/09-authentication-and-authorization/01-AzureAD-Authentication-for-AKS-Admins/
 
+AKS_RG="rgaksu?"
+AKS_NAME="aksu?"
+
 # Azure AD Authentication for AKS Cluster Admins
 
 # Verify Nodes 
@@ -23,8 +26,6 @@ kubectl cluster-info
 - Click on **SAVE**
 
 # Configure kubectl
-AKS_NAME="aksatin"
-AKS_RG="rgaksatin"
 az aks get-credentials --resource-group $AKS_RG --name $AKS_NAME --overwrite-existing
 
 # View Cluster Information

@@ -23,22 +23,6 @@ jobs:
         # is found
         run: npm audit --audit-level=high
 ```
-### Avoid executing code during dependency installation
-- By default, packages installed with npm can execute arbitrary code by defining install or postinstall scripts in their package.json.
-- These scripts can be skipped by using the switch --ignore-scripts
-However, using this switch will cause issues with packages that rely on these scripts to perform legitimate installation tasks such as downloading or compiling platform-specific binaries
-- In this case, you can manually run the scripts in the Workflow for the packages that use them:
-```
-jobs:
-  test:
-    steps:
-      - name: Install Dependencies
-        run: npm ci --ignore-scripts
-
-      - name: Install Sharp
-        working-directory: node_modules/sharp
-        run: npm run install
-```
 
 ### Limit exposure of secrets
 - Just like the token permissions, env variables with sensitive information should not be exposed globally in the Workflow, but only for the steps that actually need them.
