@@ -1,6 +1,6 @@
 # Kubernetes cluster with Azure Kubernetes Service (AKS)
 ```
-cd ~//Bosch-Azure-Devops-Nov-22/Hands-On/terraform/01-Azure/aks
+cd ~/Bosch-Azure-Devops-Nov-22/Hands-On/terraform/01-Azure/aks
 ```
 
 ```
@@ -15,7 +15,7 @@ az ad sp create-for-rbac --name spaks  --role Contributor --scopes /subscription
 ls ~/.ssh
 ```
 
-## Only is required
+## Only if required
 ```
 ssh-keygen
 ```
